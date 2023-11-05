@@ -1,4 +1,4 @@
-package j110.lab2.university;
+package university;
 
 abstract public class Student extends Person {
     private Stage stage;

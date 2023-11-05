@@ -1,6 +1,4 @@
-package j110.lab2.files;
-
-import j110.lab1.Books.Book;
+package files;
 
 public class Video extends Media {
     private PictureSize pictureSize;
@@ -37,11 +35,11 @@ public class Video extends Media {
         private int getHeight() { return height; }
 
         private void setLength(int length) {
-            Book.dataVerification(length);
+            Verification.dataVerification(length);
             this.length = length;
         }
         private void setHeight(int height) {
-            Book.dataVerification(height);
+            Verification.dataVerification(height);
             this.height = height;
         }
 

@@ -1,4 +1,4 @@
-package j110.lab2.files;
+package files;
 
 public class Main {
     public static void main(String[] args) {

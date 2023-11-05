@@ -1,4 +1,4 @@
-package j110.lab2.university;
+package university;
 
 public class Bachelor extends Student {
     Bachelor(String name, String surname, Gender gender,

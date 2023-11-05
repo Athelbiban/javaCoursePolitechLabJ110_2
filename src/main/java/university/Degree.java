@@ -1,4 +1,4 @@
-package j110.lab2.university;
+package university;
 
 public enum Degree {
     MSC("MSc"),

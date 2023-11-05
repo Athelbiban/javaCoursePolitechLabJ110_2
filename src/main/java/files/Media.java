@@ -1,6 +1,4 @@
-package j110.lab2.files;
-
-import j110.lab1.Books.Book;
+package files;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,15 +20,15 @@ public class Media extends File {
     public Duration getDuration() { return duration; }
 
     public void setFormat(String format) {
-        Book.dataVerification(format);
+        Verification.dataVerification(format);
         this.format = format;
     }
     public void setDescription(String description) {
-        Book.dataVerification(description);
+        Verification.dataVerification(description);
         this.description = description;
     }
     public void setDuration(long duration) {
-        Book.dataVerification(duration);
+        Verification.dataVerification(duration);
         this.duration = new Duration(duration);
     }
 
@@ -55,7 +53,7 @@ public class Media extends File {
         private long getDuration() { return duration; }
 
         private void setDuration(long duration) {
-            Book.dataVerification(duration);
+            Verification.dataVerification(duration);
             this.duration = duration;
         }
 

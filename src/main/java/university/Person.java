@@ -1,6 +1,4 @@
-package j110.lab2.university;
-
-import j110.lab1.Books.Book;
+package university;
 
 abstract public class Person {
     private String name;
@@ -24,7 +22,7 @@ abstract public class Person {
 }
 
     public static void printAll(Person[] persons) {
-        Book.dataVerification(persons);
+        files.Verification.dataVerification(persons);
         for (Person person : persons) {
             person.print();
         }

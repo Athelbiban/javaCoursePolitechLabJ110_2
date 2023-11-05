@@ -1,6 +1,4 @@
-package j110.lab2.files;
-
-import j110.lab1.Books.Book;
+package files;
 
 public class Document extends File {
     private String format;
@@ -16,11 +14,11 @@ public class Document extends File {
     public int getCountPage() { return countPage; }
 
     public void setFormat(String format) {
-        Book.dataVerification(format);
+        Verification.dataVerification(format);
         this.format = format;
     }
     public void setCountPage(int countPage) {
-        Book.dataVerification(countPage);
+        Verification.dataVerification(countPage);
         this.countPage = countPage;
     }
 

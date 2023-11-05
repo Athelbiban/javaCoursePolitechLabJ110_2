@@ -1,6 +1,4 @@
-package j110.lab2.files;
-
-import j110.lab1.Books.Book;
+package files;
 
 public abstract class File {
     private String fileName;
@@ -15,11 +13,11 @@ public abstract class File {
     public long getSize() { return size; }
 
     public void setFileName(String fileName) {
-        Book.dataVerification(fileName);
+        Verification.dataVerification(fileName);
         this.fileName = fileName;
     }
     public void setSize(long size) {
-        Book.dataVerification(size);
+        Verification.dataVerification(size);
         this.size = size;
     }
 
@@ -28,7 +26,7 @@ public abstract class File {
     }
 
     public static void printAll(File[] files) {
-        Book.dataVerification(files);
+        Verification.dataVerification(files);
         System.out.println("____________________" +
                 "____________________" +
                 "____________________");
